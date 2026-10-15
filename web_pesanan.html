@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Link</title>
+</head>
+<body>
+
+    <table border="1" width="100%">
+        <tr>
+            <td>
+                <a href="#">Home</a> |
+                <a href="generate_link.html">Generate Link</a> |
+                <a href="#">Transaction History</a> |
+                <a href="#">Policy</a> |
+                <a href="#">Logout</a>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <table cellpadding="5">
+            <tr>
+                <td rowspan="8" valign="top" align="center">
+                    <img src="" alt="Gambar Produk" width="200" height="200" style="border:1px solid black;">
+                    <br><br>
+                    <input type="file" name="gambar" accept="image/*">
+                </td>
+                <td>Title Here :</td>
+                <td><input type="text" name="title" value="MacBook Air £800" size="40"></td>
+            </tr>
+            <tr>
+                <td valign="top">Description :</td>
+                <td>
+                    <textarea name="description" rows="6" cols="38">Year : 2009
+Model :
+Condition : Mint</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Number :</td>
+                <td><input type="text" name="account_number" value="123-456-789-0" size="40"></td>
+            </tr>
+            <tr>
+                <td>Bank :</td>
+                <td>
+                    <select name="bank">
+                        <option value="HSBC" selected>HSBC</option>
+                        <option value="Barclays">Barclays</option>
+                        <option value="Lloyds">Lloyds</option>
+                        <option value="NatWest">NatWest</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Holder :</td>
+                <td><input type="text" name="account_holder" placeholder="Name Here" size="40"></td>
+            </tr>
+            <tr>
+                <td valign="top">Transaction :</td>
+                <td>
+                    <select name="transaction">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                    <small>* if the transaction is for 3 person, choose 3 from the drop-down list</small>
+                    <br>
+                    <input type="checkbox" name="send_mobile" id="send_mobile" checked>
+                    <label for="send_mobile">Send to Mobile Phone</label>
+                    <br>
+                    <input type="checkbox" name="send_email" id="send_email" checked>
+                    <label for="send_email">Send to Email</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Send to Mobile Phone :</td>
+                <td><input type="text" name="mobile" value="1234567890, 1234567891" size="40"></td>
+            </tr>
+            <tr>
+                <td>Send to Email :</td>
+                <td><input type="text" name="email" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com" size="40"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Generate Nabr Link"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Hasil Pemesanan Barang</title>
+</head>
+<body>
+
+    <table border="1" align="center">
+        <tr>
+            <td>
+                <a href="#">Home</a> |
+                <a href="#">Register</a> |
+                <a href="#">Policy</a> |
+                <a href="#">About</a>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <form action="#" method="post">
+        <table cellpadding="5">
+            <tr>
+                <td rowspan="9" valign="top">
+                    <img src="" alt="Gambar Produk" width="200" height="200" style="border:1px solid black;">
+                </td>
+                <td>Title Here :</td>
+                <td>MacBook Air £800</td>
+            </tr>
+            <tr>
+                <td valign="top">Description :</td>
+                <td>
+                    Year : 2009<br>
+                    Model :<br>
+                    Condition : Mint
+                </td>
+            </tr>
+            <tr>
+                <td>Total Amount :</td>
+                <td>£800</td>
+            </tr>
+            <tr>
+                <td>Pay to :</td>
+                <td>123-456-789-0</td>
+            </tr>
+            <tr>
+                <td>Payment Type :</td>
+                <td>
+                    <select name="payment_type">
+                        <option value="visa_debit" selected>Visa Debit</option>
+                        <option value="visa_credit">Visa Credit</option>
+                        <option value="mastercard">MasterCard</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Account Holder :</td>
+                <td><input type="text" name="account_holder" placeholder="Name Here" size="35"></td>
+            </tr>
+            <tr>
+                <td valign="top">Account No :</td>
+                <td>
+                    <input type="text" name="account_no" value="123-456-789-0" size="35">
+                    <br>
+                    <input type="checkbox" name="send_mobile" id="send_mobile" checked>
+                    <label for="send_mobile">Send to Mobile Phone</label>
+                    <br>
+                    <input type="checkbox" name="email_copy" id="email_copy" checked>
+                    <label for="email_copy">Email me copy of transaction</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Send to Mobile Phone :</td>
+                <td><input type="text" name="mobile" value="1234567890, 1234567891" size="35"></td>
+            </tr>
+            <tr>
+                <td>Send to Email :</td>
+                <td><input type="text" name="email" value="mfmm2g13@soton.ac.uk, fys_06@yahoo.com" size="35"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Pay using QuidLink"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
